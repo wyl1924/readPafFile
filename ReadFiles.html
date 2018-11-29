@@ -1,0 +1,41 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<title>pdf在线阅读</title>
+	<style type="text/css">
+		.lightbox{
+			position: fixed;
+		    top: 0px;
+		    left: 15%;
+		    height: 100%;
+		    width: 70%;
+		    z-index: 7;
+		    opacity: 0.3;
+		    display: block;
+		    background-color: rgb(0, 0, 0);
+		    <!-- display: none; -->
+		}
+		.pop,iframe{
+			position: absolute;
+		    left: 50%;
+		    top:0;
+			width: 893px;
+		    height: 100%;
+		    margin-left: -446.5px;
+		    z-index: 9;
+		}
+	</style>
+	<script src="js/pdf.js"></script>	
+</head>
+<body>
+	<ul>
+		<li><a href="ViewFiles/viewer.html?name=../files/Python1.pdf" target="pdfContainer" >python核心笔记</a></li>
+		<li><a href="ViewFiles/viewer.html?name=../files/Python2.pdf" target="pdfContainer">Python编程快速上手</a></li>
+		
+	</ul>
+	<div class="lightbox" id="lightbox"></div>
+	<div id="pop" class="pop">
+		<iframe src="" id="pdfContainer" name="pdfContainer" frameborder="0"></iframe>
+	</div>
+
+</body></html>
